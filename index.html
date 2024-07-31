@@ -23,13 +23,34 @@
         .mobile {
           width: 100% !important;
           max-width: 100% !important;
+        }
+
+        .card {
+          width: 100% !important;
+          max-width: 100% !important;
           padding: 0 !important;
         }
 
-        .mobile__text {
-          width: 100% !important;
-          max-width: 100% !important;
+        .card__title {
+          padding: 0 5px 10px 5px !important;
           text-align: center !important;
+        }
+
+        .card__text {
+          padding: 0 5px 10px 5px;
+          text-align: center !important;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        .icon {
+          padding: 0 5px 0 0 !important;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .footer {
+          padding: 21px !important;
         }
       }
     </style>
@@ -113,7 +134,7 @@
                   <tbody>
                     <!-- PREHEADER -->
                     <tr>
-                      <td style="padding: 0; font-family: Arial, Helvetica, sans-serif; color: #303030; font-size: 16px">
+                      <td>
                         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0">
                           <tbody>
                             <tr>
@@ -161,13 +182,15 @@
                                 style="padding: 32px 0px 25px 0px; border-radius: 16px; width: 100%"
                                 bgcolor="#000000"
                               >
-                                <img
-                                  src="images/logo.png"
-                                  border="0"
-                                  width="127px"
-                                  style="border: 0; display: block; width: 127px"
-                                  alt="Premier logo"
-                                />
+                                <a href="https://premier.one/" target="_blank" style="text-decoration: none">
+                                  <img
+                                    src="images/logo.png"
+                                    border="0"
+                                    width="127px"
+                                    style="border: 0; display: block; width: 127px"
+                                    alt="Premier logo"
+                                  />
+                                </a>
                               </td>
                             </tr>
                           </tbody>
@@ -222,16 +245,7 @@
                           <tbody>
                             <tr>
                               <td align="left" style="padding: 0">
-                                <h1
-                                  style="
-                                    font-size: 20px;
-                                    mso-line-height-rule: exactly;
-                                    line-height: 140%;
-                                    margin: 0;
-                                    font-weight: 400;
-                                    color: #ffffff;
-                                  "
-                                >
+                                <h1 style="font-size: 20px; line-height: 140%; margin: 0; font-weight: 400; color: #ffffff">
                                   Смотрите последние матчи Лиги Европы и МИР Российской Премьер-Лиги на PREMIER.
                                 </h1>
                               </td>
@@ -246,7 +260,9 @@
                     <tr>
                       <td align="center" style="font-size: 0px; padding: 0 0 30px 0" bgcolor="#171717">
                         <!--[if (gte mso 9)|(IE)]>
-                          <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="540"><tr><td align="center" valign="top" width="540">
+                          <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="540">
+                            <tr>
+                              <td align="center" valign="top" width="540">
                         <![endif]-->
                         <table
                           role="presentation"
@@ -273,7 +289,7 @@
                                 <div
                                   style="max-width: 277px; display: inline-block; width: 100%; vertical-align: middle"
                                   align="left"
-                                  class="mobile"
+                                  class="card"
                                 >
                                   <table
                                     role="presentation"
@@ -300,12 +316,13 @@
                                   </table>
                                 </div>
                                 <!--[if (gte mso 9)|(IE)]>
-                                  </td><td align="right" valign="middle" width="270px">
+                                    </td>
+                                    <td align="right" valign="middle" width="270px">
                                 <![endif]-->
                                 <div
                                   style="max-width: 270px; display: inline-block; width: 100%; vertical-align: middle"
                                   align="left"
-                                  class="mobile__text"
+                                  class="card"
                                 >
                                   <table
                                     role="presentation"
@@ -329,6 +346,7 @@
                                               line-height: 120%;
                                               font-weight: 700;
                                             "
+                                            class="card__title"
                                           >
                                             Лига Европы. Аталанта – Байер
                                           </h2>
@@ -340,6 +358,7 @@
                                               font-size: 18px;
                                               line-height: 130%;
                                             "
+                                            class="card__text"
                                           >
                                             Матчей между командами было сыграно всего два, и те – в 2022 году. Смотрите финальную игру за
                                             кубок UEFA! Начало трансляции на PREMIER в 21:10.
@@ -401,7 +420,9 @@
                     <tr>
                       <td align="center" style="font-size: 0px; padding: 0 0 30px 0" bgcolor="#171717">
                         <!--[if (gte mso 9)|(IE)]>
-                          <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="540"><tr><td align="center" valign="top" width="540">
+                          <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="540">
+                            <tr>
+                              <td align="center" valign="top" width="540">
                         <![endif]-->
                         <table
                           role="presentation"
@@ -434,7 +455,7 @@
                                 <div
                                   style="max-width: 277px; display: inline-block; width: 100%; vertical-align: middle"
                                   align="left"
-                                  class="y"
+                                  class="card"
                                 >
                                   <table
                                     role="presentation"
@@ -443,12 +464,11 @@
                                     cellpadding="0"
                                     cellspacing="0"
                                     width="100%"
-                                    class="y"
                                     style="border-spacing: 0"
                                   >
                                     <tbody>
                                       <tr>
-                                        <td align="center" style="padding: 0 10px 0 0">
+                                        <td align="center">
                                           <img
                                             src="images/image_02.png"
                                             width="100%"
@@ -467,7 +487,7 @@
                                 <div
                                   style="max-width: 270px; display: inline-block; width: 100%; vertical-align: middle"
                                   align="left"
-                                  class="y"
+                                  class="card"
                                 >
                                   <table
                                     role="presentation"
@@ -476,7 +496,6 @@
                                     cellpadding="0"
                                     cellspacing="0"
                                     width="100%"
-                                    class="y"
                                     style="border-spacing: 0"
                                   >
                                     <tbody>
@@ -492,6 +511,7 @@
                                               line-height: 120%;
                                               font-weight: 700;
                                             "
+                                            class="card__title"
                                           >
                                             РПЛ. Краснодар – Динамо М
                                           </h2>
@@ -503,6 +523,7 @@
                                               font-size: 18px;
                                               line-height: 130%;
                                             "
+                                            class="card__text"
                                           >
                                             МИР Российская Премьер-Лига завершается 25 мая в 16:20. Кто станет чемпионом – смотрите на
                                             PREMIER!
@@ -570,14 +591,16 @@
                           cellpadding="0"
                           cellspacing="0"
                           width="94%"
-                          class="mobile"
                           style="border-spacing: 0; padding: 31px 41px 31px 41px; border-radius: 16px; margin: 0 0 15px 0"
+                          class="footer"
                           bgcolor="#202020"
                         >
                           <tbody>
                             <tr>
                               <td width="50%">
-                                <img src="images/logo.png" alt="Premier logo" border="0" width="104" />
+                                <a href="https://premier.one/" target="_blank" style="text-decoration: none">
+                                  <img src="images/logo.png" alt="Premier logo" border="0" width="104" />
+                                </a>
                               </td>
                               <td width="50%" align="right">
                                 <a
@@ -610,27 +633,50 @@
                                 >
                                   Будьте в курсе всех событий и новостей
                                 </h3>
-                                <a href="#" target="_blank" style="padding: 0 17px 0 0; text-decoration: none">
-                                  <img border="0" src="images/telegram.png" width="40" alt="Telegram" />
-                                </a>
-                                <a href="#" target="_blank" style="padding: 0 17px 0 0; text-decoration: none">
-                                  <img border="0" src="images/vk.png" width="40" alt="VK" />
-                                </a>
-                                <a href="#" target="_blank" style="padding: 0 17px 0 0; text-decoration: none">
-                                  <img border="0" src="images/ok.png" width="40" alt="OK" />
-                                </a>
-                                <a href="#" target="_blank" style="padding: 0 17px 0 0; text-decoration: none">
-                                  <img border="0" src="images/whatsapp.png" width="40" alt="Whatsapp" />
-                                </a>
-                                <a href="#" target="_blank" style="padding: 0 17px 0 0; text-decoration: none">
-                                  <img border="0" src="images/dzen.png" width="40" alt="Dzen" />
-                                </a>
-                                <a href="#" target="_blank" style="padding: 0 17px 0 0; text-decoration: none">
-                                  <img border="0" src="images/rutube.png" width="40" alt="Rutube" />
-                                </a>
-                                <a href="#" target="_blank" style="padding: 0">
-                                  <img border="0" src="images/mirro.png" width="40" alt="Mirro" />
-                                </a>
+                                <span style="white-space: nowrap">
+                                  <a href="#" target="_blank" style="text-decoration: none">
+                                    <img
+                                      border="0"
+                                      src="images/telegram.png"
+                                      width="40"
+                                      alt="Telegram"
+                                      style="padding: 0 17px 0 0"
+                                      class="icon"
+                                    />
+                                  </a>
+                                  <a href="#" target="_blank" style="text-decoration: none">
+                                    <img border="0" src="images/vk.png" width="40" alt="VK" style="padding: 0 17px 0 0" class="icon" />
+                                  </a>
+                                  <a href="#" target="_blank" style="text-decoration: none">
+                                    <img border="0" src="images/ok.png" width="40" alt="OK" style="padding: 0 17px 0 0" class="icon" />
+                                  </a>
+                                  <a href="#" target="_blank" style="text-decoration: none">
+                                    <img
+                                      border="0"
+                                      src="images/whatsapp.png"
+                                      width="40"
+                                      alt="Whatsapp"
+                                      style="padding: 0 17px 0 0"
+                                      class="icon"
+                                    />
+                                  </a>
+                                  <a href="#" target="_blank" style="text-decoration: none">
+                                    <img border="0" src="images/dzen.png" width="40" alt="Dzen" style="padding: 0 17px 0 0" class="icon" />
+                                  </a>
+                                  <a href="#" target="_blank" style="text-decoration: none">
+                                    <img
+                                      border="0"
+                                      src="images/rutube.png"
+                                      width="40"
+                                      alt="Rutube"
+                                      style="padding: 0 17px 0 0"
+                                      class="icon"
+                                    />
+                                  </a>
+                                  <a href="#" target="_blank" style="padding: 0">
+                                    <img border="0" src="images/mirro.png" width="40" alt="Mirro" style="padding: 0" />
+                                  </a>
+                                </span>
                               </td>
                             </tr>
                             <tr>
@@ -641,7 +687,7 @@
                                     font-family: Arial, Helvetica, sans-serif;
                                     color: #6d6d6d;
                                     font-size: 14px;
-                                    line-height: 120%;
+                                    line-height: 160%;
                                     font-weight: 400;
                                   "
                                 >
